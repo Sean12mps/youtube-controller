@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+}
+.imbd-wrapper {
+	position: relative;
+	max-width: none;
+	overflow: hidden;
+}
+.imbd-controller {
+	position: absolute;
+	display: table;
+	transform: translateY(0%);
+	transition: .4s all ease;
+	background: #fff;
+	width: 100%;
+	padding: 0 25px;
+}
+.imbd-wrapper iframe:hover + .imbd-controller,
+.imbd-controller:hover {
+	transform: translateY(-109%);
+	
+}
+.imbd-controller .imbd-play,
+.imbd-controller .imbd-pause,
+.imbd-controller .imbd-vid-span,
+.imbd-controller .imbd-imbd-progress-bar {
+	display: table-cell;
+	min-height: 21px;
+	vertical-align: middle;
+}
+.imbd-controller .imbd-play,
+.imbd-controller .imbd-pause {
+	color: #E4AC28;
+	text-decoration: none;
+}
