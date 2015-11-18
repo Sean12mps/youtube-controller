@@ -76,7 +76,8 @@ function formatTime( time ){
 }
 
 
-$( '.imbd-progress-bar' ).on( 'mouseup touchend', function (e) {
+// $( '.imbd-progress-bar' ).on( 'mouseup touchend', function (e) {
+$( window ).on( 'change .imbd-progress-bar', function (e) {
 
 	// Calculate the new time for the video.
 	// new time in seconds = total duration in seconds * ( value of range input / 100 )
